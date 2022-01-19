@@ -11,4 +11,3 @@ function playText(){
         clearInterval(theInterval)
     }
 } 
-

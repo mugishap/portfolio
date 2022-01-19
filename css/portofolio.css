@@ -41,7 +41,9 @@ a:hover{
     width: 100%;
     margin: 0px;
     border-radius: 2px;
-    position: fixed;
+}
+#navigation{
+    margin-top: 0px;
 }
 #displayScreen{
     height: 1080px;
@@ -52,17 +54,39 @@ background-color: rgba(10, 9, 9, 0.795);
 clip-path: ellipse( 100% 100% at 34% 100%);
 color: white;
 text-align: center;
-height: 350px;
+height: 300px;
 width: 100%;
 }
 .shortcuts{
     border-radius: 5px;
     height: 70px;
+    width: 100%;
+    background-color: blueviolet;
+    margin: 10px 20px;
 
 }
+.shortcuts:hover{
+    cursor: pointer;
+}
 #playtext{
-    font-size: x-large;
     text-align: center;
     color: blue;
     padding-top: 400px;
+    font-weight: 1000;
+    font-size: 70px;
+}
+.infoheadings{
+    font-size: larger;
+    color: black;
+    font-weight: bold;
+
+}
+.information{
+    display: none;
+    font-size: large;
+    color: black;
+}
+.shortcuts:hover .information{
+    display: block;
+    margin-bottom: 600px;
 }
