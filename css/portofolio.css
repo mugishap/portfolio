@@ -50,8 +50,8 @@ a:hover{
     background-color: white;
 }
 #closingScreen{
-background-color: rgba(10, 9, 9, 0.795);
-clip-path: ellipse( 100% 100% at 34% 100%);
+/* background-color: rgba(10, 9, 9, 0.795);
+clip-path: ellipse( 100% 100% at 34% 100%); */
 color: white;
 text-align: center;
 height: 300px;
@@ -85,8 +85,27 @@ width: 100%;
     display: none;
     font-size: large;
     color: black;
+    background-color: aqua;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
 }
 .shortcuts:hover .information{
     display: block;
     margin-bottom: 600px;
+    transition: 0.3 ease-in-out;
+}
+#personalInformation:hover #educationalBackground {
+    display: none;
+}
+
+.fas{
+    color: black;
+}
+.fa-facebook{
+    position: absolute;
+    transform: translate(0%,-50%);
+}
+@font-face{
+    font-family: MyfirstFont;
+    src: url(../dancing_minotaur/Dancing\ Minotaur.ttf);
 }
