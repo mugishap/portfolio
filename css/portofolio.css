@@ -1,111 +1,215 @@
-body{
+* {
+    scroll-behavior: smooth;
+}
+
+body {
     background-color: white;
     font-size: large;
-    font-family: Microsoft Tai Le,monospace;
+    font-family: 'Smooch', cursive;
+    width: 100%;
 }
-li{
-    list-style-type: none;
-    color: white;
 
+li {
+    list-style-type: none;
+    color: black;
 }
-.links{
+
+.certifications{
+    color: black;
+}
+#toTop {
+    background-color: #3d5af1;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    float: right;
+    margin: 0px 100px;
+    justify-content: center;
+    align-self: center;
+    box-sizing: border-box;
+    padding-top: 10px;
+}
+
+#toTop:hover {
+    color: white;
+    cursor: pointer;
+}
+
+.links {
     float: right;
     color: white;
     position: relative;
-    margin-left: 30px;
-    margin-right: 30px;
+    margin: 0px 30px;
     text-align: center;
-}
-.links:hover{
-color: rgba(132, 0, 255, 0.801);
-background-color: white;
-border-radius: 5px;
-width: 120px;
-height: 30px;
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
 }
 
-a{
+.links:hover {
+    color: #3d5af1;
+    background-color: white;
+    border-radius: 5px;
+    width: 120px;
+    height: 30px;
+    transition-duration: 0.7s;
+    padding: auto;
+}
+
+.links:hover #1st {
+    position: fixed;
+}
+
+a {
     text-decoration: none;
     color: white;
     font-weight: bold;
 }
-a:hover{
-    color: rgba(132, 0, 255, 0.801);
+
+a:hover {
+    color: #3d5af1;
+    transition-duration: 0.3s;
+}
+hr{
+    border: 3px solid #3d5af1;
+    background-color: #3d5af1;
 }
 
-#navbar{
-    background-color: rgba(132, 0, 255, 0.801);
+box-icon {
+    font-size: 200px;
+}
+
+#navbar {
+    background-color: #3d5af1;
     color: white;
     height: 40px;
     padding: 10px;
     width: 100%;
     margin: 0px;
     border-radius: 2px;
+    position: relative;
+    margin-bottom: 10px;
 }
-#navigation{
-    margin-top: 0px;
+
+ul {
+    display: flex;
+    flex-direction: column;
+    color: black;
 }
-#displayScreen{
+
+#displayScreen {
     height: 1080px;
     background-color: white;
 }
-#closingScreen{
-/* background-color: rgba(10, 9, 9, 0.795);
-clip-path: ellipse( 100% 100% at 34% 100%); */
-color: white;
-text-align: center;
-height: 300px;
-width: 100%;
-}
-.shortcuts{
-    border-radius: 5px;
-    height: 70px;
-    width: 100%;
-    background-color: blueviolet;
-    margin: 10px 20px;
 
+#closingScreen {
+    background-color: rgba(10, 9, 9, 0.795);
+    clip-path: ellipse(100% 100% at 34% 100%);
+    color: #3d5af1;
+    text-align: center;
+    height: 300px;
+    width: 100%;
 }
-.shortcuts:hover{
+.down{
+   float: right;
+   padding-right: 30px;
+}
+
+.shortcuts {
+    border: 1px solid black;
+    border-radius: 10px;
+    height: 70px;
+    width: 90%;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+    flex-direction: column;
+    box-shadow: 1px 0px 2px 1px black;
+padding-left: 20px;
+}
+
+.shortcuts:hover {
     cursor: pointer;
 }
-#playtext{
+
+#playtext1 {
     text-align: center;
-    color: blue;
-    padding-top: 400px;
-    font-weight: 1000;
-    font-size: 70px;
+    color: #3d5af1;
+    padding: 300px 10px;
+    font-weight: 900;
+    font-size: 40px;
+    padding-top: 230px;
 }
-.infoheadings{
+
+#playtext2 {
+    text-align: center;
+    color: #3d5af1;
+    padding: 40px 10px 0px 100px;
+    font-weight: lighter;
+    font-size: 30px;
+    float: right;
+    margin-right: 100px;
+}
+
+#playbox {
+    margin: 10px 0px 20px 0px;
+    height: 800px;
+    background-color: white;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-flow: row wrap-reverse;
+}
+#compImage{
+    width: 400px;
+    height: 300px;
+    float: right;
+    visibility: hidden;
+}
+#playbox1{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+#playbox2{
+    padding-top: 10px;
+    width: 50%;
+    height: 100%;
+    display: block;
+
+    justify-content: center;
+}
+.curve{
+    clip-path: ellipse(20% 100% at 30% 100%);
+    background-color: #3d5af1;
+    z-index: -2;
+    font-family: 'Smooch', cursive;
+    height: 200px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.infoheadings {
     font-size: larger;
     color: black;
     font-weight: bold;
 
 }
-.information{
+
+.information {
     display: none;
     font-size: large;
     color: black;
-    background-color: aqua;
+    background-color: whitesmoke;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
-}
-.shortcuts:hover .information{
-    display: block;
-    margin-bottom: 600px;
-    transition: 0.3 ease-in-out;
-}
-#personalInformation:hover #educationalBackground {
-    display: none;
+    padding: 0px 50px 20px 50px;
+    width: 85%;
 }
 
-.fas{
+.fas {
     color: black;
-}
-.fa-facebook{
-    position: absolute;
-    transform: translate(0%,-50%);
-}
-@font-face{
-    font-family: MyfirstFont;
-    src: url(../dancing_minotaur/Dancing\ Minotaur.ttf);
 }
