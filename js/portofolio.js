@@ -54,7 +54,7 @@ function showBlock2() {
         down2.innerHTML='expand_less';
 
     }
-    else{
+   else{
         block2.style.display = "none"
         down2.innerHTML='expand_more';
 
@@ -65,7 +65,7 @@ function showBlock3() {
 
     let block3 = document.querySelector('#skills')
     if (block3.style.display == "none") {
-        block3.style.display = "block"
+        block3.style.display = "flex"
         down3.innerHTML='expand_less';
 
     }
@@ -75,3 +75,12 @@ function showBlock3() {
 
     }
 }
+let toTop = document.getElementById('toTop')
+window.addEventListener('scroll',()=>{
+    if(window.scrollY > 700){
+ toTop.style.display="block"
+    }
+    else{
+        toTop.style.display="none" 
+    }
+})

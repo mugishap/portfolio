@@ -14,21 +14,24 @@ li {
     color: black;
 }
 
-.certifications{
+
+.certifications {
     color: black;
+    list-style-type: disc;
 }
+
 #toTop {
+
     background-color: #3d5af1;
     border-radius: 50%;
     width: 50px;
     height: 50px;
-    display: flex;
+    display: none;
     float: right;
     margin: 0px 100px;
-    justify-content: center;
-    align-self: center;
     box-sizing: border-box;
-    padding-top: 10px;
+    padding: 13px;
+
 }
 
 #toTop:hover {
@@ -57,8 +60,9 @@ li {
     padding: auto;
 }
 
-.links:hover #1st {
-    position: fixed;
+.contact {
+    display: flex;
+    padding: 10px;
 }
 
 a {
@@ -71,13 +75,10 @@ a:hover {
     color: #3d5af1;
     transition-duration: 0.3s;
 }
-hr{
+
+hr {
     border: 3px solid #3d5af1;
     background-color: #3d5af1;
-}
-
-box-icon {
-    font-size: 200px;
 }
 
 #navbar {
@@ -102,18 +103,40 @@ ul {
     height: 1080px;
     background-color: white;
 }
-
+.img{
+    width: 200px;
+    height: 100px;
+}
 #closingScreen {
     background-color: rgba(10, 9, 9, 0.795);
     clip-path: ellipse(100% 100% at 34% 100%);
-    color: #3d5af1;
-    text-align: center;
-    height: 300px;
+    height: 200px;
     width: 100%;
+    display: flex;
+    color: white;
+    font-size: 28px;
+padding-top: 10px;
+margin-top: 300px;
 }
-.down{
-   float: right;
-   padding-right: 30px;
+.projects{
+    width: 400px;
+    height: 600px;
+    background-color: rgb(167, 179, 189);
+    margin: 100px 20px;
+    border-radius: 10px;
+}
+#showcase{
+    display: flex;
+}
+.contact{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.down {
+    float: right;
+    padding-right: 30px;
 }
 
 .shortcuts {
@@ -127,7 +150,7 @@ ul {
     margin: 10px;
     flex-direction: column;
     box-shadow: 1px 0px 2px 1px black;
-padding-left: 20px;
+    padding-left: 20px;
 }
 
 .shortcuts:hover {
@@ -157,24 +180,27 @@ padding-left: 20px;
     margin: 10px 0px 20px 0px;
     height: 800px;
     background-color: white;
-    display:flex;
+    display: flex;
     justify-content: space-between;
     align-items: center;
     flex-flow: row wrap-reverse;
 }
-#compImage{
+
+#compImage {
     width: 400px;
     height: 300px;
     float: right;
     visibility: hidden;
 }
-#playbox1{
+
+#playbox1 {
     width: 50%;
     height: 100%;
     display: flex;
     justify-content: space-around;
 }
-#playbox2{
+
+#playbox2 {
     padding-top: 10px;
     width: 50%;
     height: 100%;
@@ -182,11 +208,12 @@ padding-left: 20px;
 
     justify-content: center;
 }
-.curve{
+
+.curve {
     clip-path: ellipse(20% 100% at 30% 100%);
     background-color: #3d5af1;
     z-index: -2;
-    font-family: 'Smooch', cursive;
+    font-family: Microsoft Tai Le, monospace;
     height: 200px;
     display: flex;
     justify-content: flex-start;
@@ -210,6 +237,14 @@ padding-left: 20px;
     width: 85%;
 }
 
-.fas {
-    color: black;
+#skills {
+    display: none;
+    align-content: center;
+    padding-top: 0px;
+    justify-content: space-between;
+    flex-flow: row wrap;
+    width: 85%;
+    background-color: whitesmoke;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
 }

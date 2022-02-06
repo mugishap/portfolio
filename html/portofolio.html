@@ -14,9 +14,7 @@
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <script src="../js/portofolio.js"></script>
     <script src="https://unpkg.com/boxicons@2.1.1/dist/boxicons.js"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Smooch&display=swap" rel="stylesheet">
+
 <body>
     <nav id="navigation">
         <div id="navbar">
@@ -27,7 +25,11 @@
         </div>
     </nav>
     <div id="playbox">
-        <div class="curve"><p></precieux></p></div>
+        <div class="curve">
+            <p>
+                </precieux>
+            </p>
+        </div>
         <div id="playbox1">
             <p id="playtext1"></p>
         </div>
@@ -82,43 +84,67 @@
             </ul>
         </div>
 
-        <!-- <div class="shortcuts" onclick="showBlock3()" id="skills">
-            <h3 class="infoheadings">Skills</h3>
+        <div class="shortcuts" onclick="showBlock3()">
+            <h3 class="infoheadings">Skills<span id="down3" class="material-icons down">
+                expand_more
+            </span></h3>
+        </div>
 
-            <div class="information">
-                <p><box-icon type='logo' name='html5'></box-icon></p>
-                <p><box-icon name='css3' type='logo' ></box-icon></p>
-                <p><box-icon name='javascript' type='logo' ></box-icon></p>
-                <p><box-icon name='nodejs' type='logo' ></box-icon></p>
-                <p><box-icon name='data' type='solid' ></box-icon></p>
-                <p><box-icon name='php' type='logo' ></box-icon></p>
-                <p><box-icon name='react' type='logo' ></box-icon></p>
-            </div> -->
-    </div>
+        <div class="information"  id="skills">
+            <p>
+                <box-icon size="lg" color="black" type='logo' name='html5'></box-icon><br>HTML5
+            </p>
+            <p>
+                <box-icon size="lg" color="black" name='css3' type='logo'></box-icon><br>CSS3
+            </p>
+            <p>
+                <box-icon size="lg" color="black" name='javascript' type='logo'></box-icon><br>JAVASCRIPT
+            </p>
+            <p>
+                <box-icon size="lg" color="black" name='nodejs' type='logo'></box-icon><br>NODE JS
+            </p>
+            <p>
+                <box-icon size="lg" color="black" name='data' type='solid'></box-icon><br>SQL
+            </p>
+            <p>
+                <box-icon size="lg" color="black" name='php' type='logo'></box-icon><br>PHP
+            </p>
+            <p>
+                <box-icon size="lg" color="black" name='react' type='logo'></box-icon><br>REACT
+            </p>
+        </div>
     </div>
     <a id="toTop" href="#navigation"><span class="material-icons">navigation</span></a>
-    <div id="closingScreen">
-        <ul>
-            <li class="info" style="color:red;"><a><i class="fas fa-github"></i>
-                </a>
-            </li>
-            <li class="info" style="color:red;"><a><i class="fas fa-linkedin"></i>
-                </a>
-            </li>
-
-            <li class="info" style="color:red;"><a><i class="fas fa-instagram"></i>
-                </a>
-            </li>
-
-            <li class="info" style="color:red;"><a><i class="fas fa-facebook"></i>
-                </a>
-            </li>
-
-            <li class="info" style="color:red;"><a><i class="fas fa-twitter"></i>
-                </a>
-            </li>
-        </ul>
+    <div id="showcase">
+        <div class="projects">
+            <a href="http://" target="_blank"><img class="img" src="../images/blackcomp.png" alt="Project preview"></a>
+        </div>
+        <div class="projects">
+            <a href="http://" target="_blank"><img class="img" src="../images/blackcomp2.png" alt="Project preview"></a>
+        </div>
+        <div class="projects">
+            <a href="http://" target="_blank"><img class="img" src="../images/computer.png" alt="Project preview"></a>
+        </div>
+        <div class="projects">
+            <a href="http://" target="_blank"><img class="img" src="../images/codecomp.gif" alt="Project preview"></a>
+        </div>
     </div>
+    <div id="closingScreen">
+        <div class="phone">
+    <span>Contact Us:</span><br>
+        <a href="tel:+25072307144"><box-icon size="lg" color="white" name="phone" type="logo"></box-icon></a>
+        0782307144
+    
+</div>
+    <div class="contact">
+<a href="https://www.facebook.com/beni.precieux/" target="_blank" class="contact"><box-icon size="lg" color="white" name="facebook" type="logo"></box-icon></a>
+<a href="https://www.instagram.com/precieux_64/" target="_blank" class="contact"><box-icon size="lg" color="white" name="instagram" type="logo"></box-icon></a>
+<a href="https://www.linkedin.com/in/mugisha-precieux-410336227/" target="_blank" class="contact"><box-icon size="lg" color="white" name="linkedin-square" type="logo"></box-icon></a>
+<a href="https://twitter.com/Pre_mugisha" target="_blank" class="contact"><box-icon size="lg" color="white" name="twitter" type="logo"></box-icon></a>
+<a href="https://github.com/mugishap" target="_blank" class="contact"><box-icon size="lg" color="white" name="github" type="logo"></box-icon></a>
+<a href="mailto:precieuxmugisha@gmail.com" target="_blank" class="contact"><box-icon size="lg" color="white" name="gmail" type="logo"></box-icon></a>
+</div>    
+</div>
 
 </body>
 
