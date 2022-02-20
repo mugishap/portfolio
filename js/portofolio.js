@@ -1,7 +1,7 @@
 
 var i = 0;
 function playText1() {
-    var text1 = 'Hello there👋👋👋, I am Mugisha Puceau Precieux. Nice to meet you.';
+    var text1 = 'Hello there👋👋👋, I am Mugisha Puceau Precieux. Nice to meet you. I am a software developer based in Rwanda and open to remote jobs, below is my portofolio';
     var speed = 100;
     if (i < text1.length) {
         document.getElementById("playtext1").innerHTML += text1.charAt(i);
@@ -9,10 +9,8 @@ function playText1() {
         setTimeout(playText1, speed);
     }
 }
-window.onload = () =>{playText1()}
+// window.onload = ()=>{playText1()}
 //second text
-
-let j = 0
 function showBlock1() {
     let down1 = document.querySelector('#down1')
     let block1 = document.querySelector('#personalInformation')
@@ -69,4 +67,4 @@ function timeDisplay(){
     document.querySelector(".time").innerHTML = now.toLocaleTimeString()
     setTimeout(function(){timeDisplay()}, 1000)
 }
-window.onload =function(){timeDisplay()}
+window.onload =function(){timeDisplay(),playText1()}
