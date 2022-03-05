@@ -23,6 +23,11 @@ function showBlock1() {
         down1.innerHTML = 'expand_more'
     }
 }
+function navigate(){
+    if(window.scrollY > 200){
+        document.querySelector('.to-top').style.display = 'flex'
+    }
+}
 function showBlock2() {
     let down2 = document.querySelector('#down2')
 
@@ -65,6 +70,6 @@ window.addEventListener('scroll', () => {
 function timeDisplay(){
     const now = new Date()
     document.querySelector(".time").innerHTML = now.toLocaleTimeString()
-    setTimeout(function(){timeDisplay()}, 1000)
+    setTimeout(function () { timeDisplay(); }, 1000)
 }
 window.onload =function(){timeDisplay(),playText1()}

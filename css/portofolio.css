@@ -1,3 +1,4 @@
+
 @import url("https://fonts.googleapis.com/css2?family=Orbitron&display=swap");
 
 
@@ -17,16 +18,27 @@
     src: url('../game_of_squids/Game\ Of\ Squids.otf') format('embedded-opentype'), url('../game_of_squids/Game\ Of\ Squids.ttf') format('ttf'), url('IT.TTF') format('truetype'), url('../game_of_squids/Game\ Of\ Squids.png') format('png');
 }
 
-
+.to-top{
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    color: #3d5af1;
+    border-radius: 50%;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    float: right;
+}
 
 
 body {
-    background-image: url("https://media.istockphoto.com/photos/server-room-data-center-for-cloud-computing-picture-id1316753802?b=1&k=20&m=1316753802&s=170667a&w=0&h=hXzXrLmyr1oRsFXsZtP8dwHNR2MWB6a7Dl_JooodOuU=");
-    display: block;
+    background-image: url("https://live.staticflickr.com/3721/10633671255_2f20f50d82_b.jpg");
+
     background-attachment: fixed;
-    background-repeat:no-repeat;
-    background-position: center;
-    background-size: contain;
+    background-size: contain;   
+     display: block;
+     /* overflow: hidden; */
+     background-color: black;
 }
 
 .time {
@@ -69,7 +81,6 @@ li {
     background-color: white;
     border-radius: 5px;
     width: 150px;
-    height: 30px;
     transition-duration: 0.7s;
     padding: auto;
 }
@@ -101,7 +112,7 @@ hr {
     height: 40px;
     padding: 5px;
     width: 100%;
-    border-radius: 2px;
+    border-radius: 20px;
     position: relative;
     padding-bottom: 20px;
     font-family: "Orbitron", sans-serif;
@@ -178,23 +189,13 @@ ul {
 
 #playtext1 {
     text-align: center;
-    color: white;
+    color: rgb(255, 255, 255);
     padding: 300px 10px;
     font-weight: 900;
     font-size: 40px;
-    padding-top: 230px;
+    padding-top: 80px;
 
-
-}
-
-#playtext2 {
-    text-align: center;
-    color: #091553;
-    padding: 40px 10px 0px 100px;
-    font-weight: lighter;
-    font-size: 30px;
-    float: right;
-    margin-right: 100px;
+word-spacing: 5px;
 }
 
 #playbox {
@@ -204,6 +205,10 @@ ul {
     justify-content: center;
     font-family: "Orbitron", sans-serif;
     color: blue;
+}
+ol{
+    display: flex;
+    float: right;
 }
 
 #playbox1 {
@@ -223,7 +228,7 @@ ul {
 }
 
 .curve {
-    clip-path: ellipse(100% 80% at top);
+    clip-path: ellipse(100% 70% at 90% 5%);
     background-color: #091553;
     z-index: -2;
     font-size: xx-large;
@@ -233,6 +238,7 @@ ul {
     flex-flow: column wrap;
     align-items: center;
     padding: 0px;
+    border-radius: 10px;
 
 }
 #tag{
